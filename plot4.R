@@ -31,7 +31,7 @@ plot4 <- function(){
           geom = "path", 
           xlab = "Year",
           ylab = "Emissions (thousands of tons)") +
-    ggtitle(expression(atop("Annual Emissions change in U.S", atop(italic("(1999, 2008)"), "")))) +
+    ggtitle(expression(atop("Annual Coal Emissions change in U.S", atop(italic("(1999, 2008)"), "")))) +
     scale_x_continuous(breaks = range(data.emissions.PM2.5.annual.total$year))
 
     ggsave(file="plot4.png")}
